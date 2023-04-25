@@ -1,18 +1,27 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useThemeSwitcher = () => {
-	const [theme, setTheme] = useState(localStorage.theme);
-	const activeTheme = theme === 'dark' ? 'light' : 'dark';
+  const [theme, setTheme] = useState(localStorage.theme);
 
-	useEffect(() => {
-		const root = window.document.documentElement;
+  const activeTheme = theme === "dark" ? "light" : "dark";
 
-		root.classList.remove(activeTheme);
-		root.classList.add(theme);
-		localStorage.setItem('theme', theme);
-	}, [theme, activeTheme]);
+  useEffect(() => {
+    const root = window.document.documentElement;
 
-	return [activeTheme, setTheme];
+    root.classList.remove(activeTheme);
+
+    if (root.classList.length === 0) {
+      root.classList.add("dark");
+    } else if (theme === undefined) {
+      root.classList.add("dark");
+    } else {
+      const oldTheme = activeTheme === "light" ? "dark" : "light";
+      root.classList.remove(oldTheme);
+      root.classList.toggle(activeTheme);
+    }
+  }, [theme, activeTheme]);
+
+  return [activeTheme, setTheme];
 };
 
 export default useThemeSwitcher;

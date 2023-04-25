@@ -11,6 +11,8 @@ const AppHeader = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeTheme, setTheme] = useThemeSwitcher();
 
+  console.log("activeTheme:", activeTheme);
+
   function toggleMenu() {
     if (!showMenu) {
       setShowMenu(true);
@@ -64,7 +66,7 @@ const AppHeader = () => {
             aria-label="Theme Switcher"
             className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
           >
-            {activeTheme === "dark" ? (
+            {activeTheme !== "dark" ? (
               <FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
             ) : (
               <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
@@ -177,7 +179,7 @@ const AppHeader = () => {
             aria-label="Theme Switcher"
             className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
           >
-            {activeTheme === "dark" ? (
+            {activeTheme !== "dark" ? (
               <FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
             ) : (
               <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
