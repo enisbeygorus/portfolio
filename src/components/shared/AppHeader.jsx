@@ -11,8 +11,6 @@ const AppHeader = () => {
   const [showModal, setShowModal] = useState(false);
   const [activeTheme, setTheme] = useThemeSwitcher();
 
-  console.log("activeTheme:", activeTheme);
-
   function toggleMenu() {
     if (!showMenu) {
       setShowMenu(true);

@@ -7,7 +7,35 @@ export const visualizeDijkstraData = {
     publishDate: "",
     tags: "UI / Frontend",
   },
-  Demo: { pathName: "visualize-dijkstra-algorithm" },
+  Demo: {
+    pathName: "visualize-dijkstra-algorithm",
+    descriptions: [
+      { id: 1, details: "There is 5 Nodes" },
+      {
+        id: 2,
+        details: "Green: Start node. Algorithm will start to search from here.",
+      },
+      { id: 3, details: "Red: Finish node. We need to reach this node" },
+      {
+        id: 4,
+        details:
+          "Black: Wall Node. Algorithm can't search this node and can't pass through it.",
+      },
+      {
+        id: 5,
+        details: "Blue Node: Searched Nodes",
+      },
+      {
+        id: 6,
+        details: "White Node: Unsearched Nodes",
+      },
+      {
+        id: 7,
+        details:
+          "Gameplay: Place green, red and black nodes on board and click Visualize button to find to shortest path.",
+      },
+    ],
+  },
   ProjectImages: [
     {
       id: 1,
