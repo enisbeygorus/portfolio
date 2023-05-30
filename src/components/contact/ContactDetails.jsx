@@ -3,7 +3,7 @@ import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 const contacts = [
   {
     id: 1,
-    name: "Paşa mah. 1.Çınarlı sok. Şişli/İstanbul",
+    name: "Paşa mah. Şişli/İstanbul",
     icon: <FiMapPin />,
   },
   {

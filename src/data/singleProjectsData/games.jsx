@@ -14,7 +14,7 @@ export const games = {
       img: Image1,
     },
   ],
-  ReferenceLink: { link: "https://guul.games/" },
+  WebsiteLink: { link: "https://guul.games/" },
   ProjectInfo: {
     ClientHeading: "",
     CompanyInfo: [],

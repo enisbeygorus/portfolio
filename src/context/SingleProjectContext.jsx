@@ -8,6 +8,7 @@ import {
   eCommerce,
   microsoftTeamsAndSlackBot,
   realEstateAPI,
+  nextjsBlogApp,
 } from "../data/singleProjectsData";
 
 const SingleProjectContext = createContext();
@@ -38,6 +39,9 @@ export const SingleProjectProvider = ({ children }) => {
         break;
       case "real-estate-api":
         setSingleProjectData(realEstateAPI);
+        break;
+      case "nextjs-blog-app":
+        setSingleProjectData(nextjsBlogApp);
         break;
 
       default:

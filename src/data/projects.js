@@ -1,5 +1,5 @@
 // Import images
-import WebImage2 from "../images/web-project-2.jpg";
+import skyBlog from "../images/sky-blog.png";
 import ShortestPathImage from "../images/shortest-path.png";
 import turnBasedImage from "../images/turn-based.jpg";
 import nodeJsImage from "../images/nodejs-logo.png";
@@ -8,6 +8,18 @@ import slackAndMicrosoftTeams from "../images/slack_v_teams.jpg";
 import realEstateImage from "../images/real-estate.png";
 
 export const projectsData = [
+  {
+    id: 7,
+    title: "NextJS Blog App",
+    category: "Web Application",
+    img: skyBlog,
+    projectPath: "nextjs-blog-app",
+    ProjectHeader: {
+      title: "NextJS Blog App",
+      publishDate: "Jul 26, 2021",
+      tags: "UI / Frontend",
+    },
+  },
   {
     id: 1,
     title: "Visualize Dijkstra Algorithm",

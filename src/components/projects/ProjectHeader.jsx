@@ -34,15 +34,27 @@ const ProjectSingleHeader = () => {
             </a>
           </div>
         ) : null}
-        {singleProjectData.ReferenceLink ? (
+        {singleProjectData.WebsiteLink ? (
           <div className="flex items-center">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={singleProjectData.ReferenceLink.link}
+              href={singleProjectData.WebsiteLink.link}
+              className="mr-2 text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-1.5 duration-300"
+            >
+              Website
+            </a>
+          </div>
+        ) : null}
+        {singleProjectData.SourceLink ? (
+          <div className="flex items-center">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={singleProjectData.SourceLink.link}
               className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-1.5 duration-300"
             >
-              Reference
+              Source Code
             </a>
           </div>
         ) : null}

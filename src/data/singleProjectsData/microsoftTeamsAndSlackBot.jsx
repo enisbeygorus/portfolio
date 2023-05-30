@@ -7,7 +7,7 @@ export const microsoftTeamsAndSlackBot = {
     publishDate: "",
     tags: "Backend",
   },
-  ReferenceLink: { link: "https://guul.games/microsoft-teams" },
+  WebsiteLink: { link: "https://guul.games/microsoft-teams" },
   ProjectImages: [
     {
       id: 1,

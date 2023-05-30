@@ -7,7 +7,7 @@ export const eCommerce = {
     publishDate: "",
     tags: "UI / Frontend",
   },
-  ReferenceLink: { link: "https://enis-ecommerce.netlify.app/" },
+  WebsiteLink: { link: "https://enis-ecommerce.netlify.app/" },
   ProjectImages: [
     {
       id: 1,

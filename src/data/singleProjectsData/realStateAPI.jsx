@@ -7,7 +7,7 @@ export const realEstateAPI = {
     publishDate: "",
     tags: "Backend",
   },
-  ReferenceLink: { link: "https://github.com/Enisbeygorus/emlak-cuzdani-api" },
+  WebsiteLink: { link: "https://github.com/Enisbeygorus/emlak-cuzdani-api" },
   ProjectImages: [
     {
       id: 1,
