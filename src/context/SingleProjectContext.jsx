@@ -9,6 +9,7 @@ import {
   microsoftTeamsAndSlackBot,
   realEstateAPI,
   nextjsBlogApp,
+  funGamesSocial,
 } from "../data/singleProjectsData";
 
 const SingleProjectContext = createContext();
@@ -42,6 +43,9 @@ export const SingleProjectProvider = ({ children }) => {
         break;
       case "nextjs-blog-app":
         setSingleProjectData(nextjsBlogApp);
+        break;
+      case "fun-games-social":
+        setSingleProjectData(funGamesSocial);
         break;
 
       default:

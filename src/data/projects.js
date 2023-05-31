@@ -1,5 +1,6 @@
 // Import images
 import skyBlog from "../images/sky-blog.png";
+import funGamesLogo from "../images/funGamesLogo.png";
 import ShortestPathImage from "../images/shortest-path.png";
 import turnBasedImage from "../images/turn-based.jpg";
 import nodeJsImage from "../images/nodejs-logo.png";
@@ -10,12 +11,24 @@ import realEstateImage from "../images/real-estate.png";
 export const projectsData = [
   {
     id: 7,
-    title: "NextJS Blog App",
+    title: "Next.js Blog App",
     category: "Web Application",
     img: skyBlog,
     projectPath: "nextjs-blog-app",
     ProjectHeader: {
-      title: "NextJS Blog App",
+      title: "Next.js Blog App",
+      publishDate: "Jul 26, 2021",
+      tags: "UI / Frontend",
+    },
+  },
+  {
+    id: 8,
+    title: "Fun Games Social Web App",
+    category: "Web Application",
+    img: funGamesLogo,
+    projectPath: "fun-games-social",
+    ProjectHeader: {
+      title: "Fun Games Social Web App",
       publishDate: "Jul 26, 2021",
       tags: "UI / Frontend",
     },

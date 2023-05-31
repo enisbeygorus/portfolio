@@ -3,7 +3,7 @@ import Image1 from "../../images/sky-blog.png";
 
 export const nextjsBlogApp = {
   ProjectHeader: {
-    title: "NextJS Blog App",
+    title: "Next.js Blog App",
     publishDate: "",
     tags: "UI / Frontend",
   },

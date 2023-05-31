@@ -13,9 +13,9 @@ const ProjectSingle = ({ title, category, image, projectPath }) => {
       }}
     >
       <Link to={`/projects/${projectPath}`} aria-label="Single Project">
-        <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+        <div className="flex  sm:block p-4 sm:p-0 rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
           <div
-            className="flex justify-center items-center"
+            className="flex justify-center items-center w-1/4 sm:w-auto"
             style={{ aspectRatio: "1 / 1" }}
           >
             <img
@@ -24,7 +24,7 @@ const ProjectSingle = ({ title, category, image, projectPath }) => {
               alt="Single Project"
             />
           </div>
-          <div className="text-center px-4 py-6 h-40 ">
+          <div className="h-auto flex-1 text-center px-4 py-6 sm:h-40 ">
             <p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
               {title}
             </p>
