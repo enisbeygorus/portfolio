@@ -32,6 +32,7 @@ export const nextjsBlogApp = {
           "TailwindCSS",
           "React Testing Library",
           "Jest",
+          "Docker",
           "CI/CD",
         ],
       },
@@ -65,11 +66,15 @@ export const nextjsBlogApp = {
       },
       {
         id: 6,
+        details: "Added Dockerfile to build an image and run in container.",
+      },
+      {
+        id: 7,
         details:
           "Finally to design the website I used tailwind. I like simple and memorable desings so used few colors",
       },
       {
-        id: 7,
+        id: 8,
         details: "You can check the website and source code.",
       },
     ],
