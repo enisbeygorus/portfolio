@@ -1,0 +1,1 @@
+.circle{background:#00dcff;margin:auto;overflow:hidden;animation:grow 2s;position:absolute;top:0}@keyframes grow{0%{transform:scale(0);border-radius:100%;background:blue}to{transform:scale(1);border-radius:0;background:#00dcff}}
